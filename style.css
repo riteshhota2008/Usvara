@@ -1,0 +1,388 @@
+body{
+	margin: 0px;
+	font-family: Trebuchet MS;
+	background: url(photos/music4.jpg) no-repeat center center fixed;
+	-moz-background-size: cover;
+
+	-webkit-background-size: cover;
+
+	-o-background-size: cover;
+
+	background-size: cover;
+}
+a{
+	text-decoration:none;
+}
+header{
+	width: 1050px;
+	min-height: 657px;
+	margin: 0 auto;
+	border-bottom: 2px solid grey;
+	border-top: 2px solid grey;
+	border-radius: 10px;
+	font-family: Trebuchet MS;
+}
+#menu a{
+	color: black;
+}
+#menu{
+	float: left;
+	padding: 10px 0 0 0;
+	margin:25px 0px 60px 65px;
+	border-radius: 10px;
+}
+#menu li{
+	float: left;
+	list-style: none;
+	color:green;
+	padding: 7px 5px 7px 5px;
+	margin:-5px 0px 5px 5px;
+	min-width: 70px;
+	text-align: center;
+	font-size: 15px;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-bottom: 2px solid grey;
+	border-radius: 10px;
+	color: black;
+
+}
+#menu li:hover {
+	font-size: 17px;
+	padding: 5px;
+	background-color: rgba(192,217,217,1);
+	border-radius: 10px;
+}
+#more{
+	width: 170px;
+	margin:10px 3px 0px -95px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity linear 0.15s;
+}
+#arrow{
+	margin-left:5px;
+ }
+#menu li:hover ul{
+	z-index: 100;
+	opacity: 1;
+ }
+ #more li{
+ 	min-width: 160px;
+ 	text-align: center;
+ 	padding: 5px;
+ }
+#language{
+	clear: both;
+	margin-left: 45px;
+	min-height:50px;
+	width: 100%;
+	color: blue;
+}
+#language li{
+	float: left;
+	list-style: none;
+	margin: 8px 5px 0 0;
+	padding:7px 25px 7px 25px;
+	font-family: Trebuchet MS;
+	text-align:center;
+	border-radius: 10px;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-bottom: 2px solid grey;
+}
+
+#language li a{
+	color: black;
+}
+#language ul li:hover{
+	background-color: rgba(192,217,217,1);
+	font-size: 17px;
+	padding: 6px 24px 7px 23px;
+}
+#usvara-left{
+	float: left;
+}
+#usvara-left p{
+	margin: 0;
+	width:300px;
+	font-size: 14px;
+
+}
+#usvara-left h2{
+	color:red;
+	margin: 15px 0 0 0;
+	width:300px;
+}
+#fivicon{
+	width:70px;
+	height:60px;
+	float:left;
+	margin:10px;
+}
+#fivicon img{
+	width:70px;
+	height:60px;
+}
+#usvara-right{
+	float: right;
+	margin-top: 20px;
+}
+
+#usvara-right div{
+	width:60px;
+	height:90px;
+	border: 2px solid black;
+	border-radius:10px;
+	float:left;
+}
+#usvara-right h2{
+	float:right;
+	color: purple;
+}
+
+.search-field{
+	width: 500px;
+	margin:10px 3px 0px 0px;
+    padding: 5px 0px;
+    border-radius: 10px;
+    position: absolute;
+    transition: opacity linear 0.15s;
+}
+#search-container ul{
+	margin:10px 0px 0px -25px;
+	padding-top: 10px;
+
+}
+.filter-button{
+	list-style: none;
+	display: inline;
+	padding: 5px 5px 0px 5px;
+
+}
+
+.filter-button:hover{
+	cursor: pointer;
+}
+.search{
+	height: 50px;
+	width: 600px;
+	padding: 0px 5px 0px 5px;
+	margin-top: 2px;
+	border-radius: 10px;
+	border-left: 1px solid grey;
+	border-right: 1px solid grey;
+	border-bottom: 2px solid grey;
+	position: absolute;
+}
+#search-container{
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+#search-container h2{
+	position: relative;
+	margin: 0px;
+	color: #3DA0CE;
+	font-family: Trebuchet MS;
+	margin-bottom: -10px;
+}
+
+#apply-button{
+	float:right;
+	position: absolute;
+	margin-left: 520px;
+	margin-top: 8px;
+	background-color: #3DA0CE;
+	padding:5px 10px 5px 10px;
+	border-radius: 5px;
+	color: black;
+}
+
+#content{
+	width: 1050px;
+	margin: 0 auto;
+	padding-top: 10px;
+	border-bottom: 2px solid grey;
+	border-top: 2px solid grey;
+	border-radius: 10px;
+}
+#content h3{
+	color: #3DA0CE;
+	margin: 0 0 10px 0;
+}
+#new-releases{
+	max-width: 685px;
+	float: right;
+}
+#new-releases h4{
+	margin-left: 20px;
+}
+#top-seven{
+	border-left: 1px solid #6E6B6B;
+	border-right: 1px solid #6E6B6B;
+	border-radius: 10px;
+	margin-bottom: 20px;
+	float: left;
+	padding: 5px;
+}
+#top-seven p{
+	text-align: center;
+	color: #3717DB;
+}
+#poster-top-seven{
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	border: 2px solid #6E6B6B; 
+	float: left;
+}
+.circle{
+	border: 2px solid #6E6B6B;
+	float: left;
+	padding: 15px;
+	border-radius: 30px;
+	font-family: ;Trebuchet MS;
+	color: #6E6B6B;
+}
+.index{
+	float: left;
+	margin-top: 20px;
+	color: #FB63C6;
+}
+#content h4{
+	float: left;
+	margin:5px 20px 0 10px;
+	color: grey;
+}
+.see-all-button{
+	float: left;
+	padding:5px 10px 5px 10px;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	border-bottom: 1px solid grey;
+	border-radius: 10px; 
+	color: grey;
+}
+.poster{
+	float: right;
+	margin:0 10px 10px 10px;/*margin:0 10px 10px 10px;*/
+	border: 2px solid grey;/*border: 2px solid grey;*/
+	border-radius: 10px;/*border-radius: 10px;*/
+	padding: 0px;
+}
+#content-bottom,#content-top{
+	clear: both;
+	width: 1050px;
+	height: 490px;
+
+}
+#content-bottom h3{
+	margin-left: 20px;
+}
+#jukeboxes{
+	border-left: 1px solid #6E6B6B;
+	border-right: 1px solid #6E6B6B;
+	border-radius: 10px;
+	float: left;
+	padding: 10px 22px 10px 10px;
+}
+.top-ten{
+	color: grey;
+}
+#most-popular{
+	max-width: 750px;
+	float: right;
+	margin:-100px 0px 0px 15px;
+}
+.select-button{
+	float: right;
+	padding:5px 10px 5px 10px;
+	border-bottom: 1px solid grey;
+	border-right: 1px solid grey;
+	border-left: 1px solid grey;
+	border-radius: 10px;
+	margin-right: 10px;
+}
+#devotinal{
+	max-width: 700px;
+	margin-top: 47px;
+	float: right;
+}
+footer{
+	width:1050px;
+	height: 220px;
+	margin:0 auto;
+	font-family: Trebuchet MS;
+	border-bottom: 2px solid grey;
+	border-top: 2px solid grey;
+	border-radius: 10px;
+	clear: both;
+}
+#footer-div-1{
+	float:left;
+	margin:0 80px 0 50px;
+	color: #F0BD21;
+}
+#footer-div-1 p{
+	width: 150px;
+	word-wrap: break-word;
+}
+#footer-div-2{
+	float:left;
+	margin-right: 80px;
+	color: grey;
+}
+#footer-div-3{
+	float:left;
+	margin-right: 80px;
+	color: #8E1414;
+}
+#footer-div-4{
+	float:left;
+	color: #8E1414;
+}
+#email-id{
+	width: 100px;
+	float: left;
+	margin:5px 10px 0 0;
+
+}
+#subscribe-button{
+	background-color: #3DA0CE;
+	padding:5px;
+	border-radius: 5px;
+	float: left;
+}
+#footer-div-4 div{
+	float: left;
+	border:1px solid #2889BD;
+	padding:2px 5px 2px 5px;
+	margin-right: 5px;
+	color: black;
+}
+
+#footer-div-4 p{
+	color: #2889BD;
+}
+#footer-div-3 a,#footer-div-3 p{
+	margin:0;
+	color: black;
+}
+#footer-div-3 span{
+	color: #8E1414;
+	font-weight: bold;
+}
+
+.media-icon{
+	color: #8E1414;
+	border: 1px solid #C4C4C4;
+	float: left;
+	padding: 10px 20PX 10PX 20px;
+	border-radius: 45px;
+	margin-right: 10px;
+	font-family: Trebuchet MS;
+}
