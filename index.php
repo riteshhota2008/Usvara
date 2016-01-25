@@ -2,9 +2,9 @@
 $dbhost = 'localhost';
 $dbuser = 'username';
 $dbpass = 'password';
-$connect=@mysql_connect("localhost","username","password");
+$connect=@mysql_connect("localhost","u372998677_stud","abhisekh96");
 
-mysql_select_db("Song_upload");
+mysql_select_db("u372998677_stud");
 
 
 $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");
@@ -254,11 +254,13 @@ endwhile;
         <!-- Start Slider section -->
         <div id="wowslider-container1">
             <div class="ws_images"><ul>
-                    <li><img src="data1/images/music1.jpg" alt="music1" title="The Professional Music World" id="wows1_0"/></li>
-                    <li><img src="data1/images/music2.jpg" alt="music2" title="The Professional Music World" id="wows1_1"/></li>
-                    <li><img src="data1/images/music3.jpg" alt="music3" title="The Professional Music World" id="wows1_2"/></li>
-                    <li><a href="#"><img src="data1/images/music4.jpg" alt="bootstrap slider" title="The Professional Music World" id="wows1_3"/></a></li>
-                    <li><img src="data1/images/music5.jpg" alt="music5" title="The Professional Music World" id="wows1_4"/></li>
+                    <li><img src="data1/images/Loveshhuda-Slider.jpg" alt="music1" title="Loveshhuda" id="wows1_0"/></li>
+                    <li><img src="data1/images/Airlift_Slider.jpg" alt="music2" title="Airlift" id="wows1_1"/></li>
+                    <li><img src="data1/images/SaalaKhadoos_Slider.jpg" alt="music3" title="Saala Khadoos" id="wows1_2"/></li>
+                    <li><a href="#"><img src="data1/images/Sanam_Teri_Kasam_Slider.jpg" alt="music4" title="Sanam Teri Kasam" id="wows1_3"/></a></li>
+                    <li><img src="data1/images/SanamRe_Slider.jpg" alt="music5" title="Sanam Re" id="wows1_4"/></li>
+                    <li><img src="data1/images/Brothers_Slider.jpg" alt="music6" title="Brothers" id="wows1_5"/></li>
+                    <li><img src="data1/images/Fitoor_Slider.jpg" alt="music7" title="Fitoor" id="wows1_6"/></li>
                 </ul></div>
             <div class="ws_bullets"><div>
                     <a href="#" title="The Professional Music World"><span><img src="data1/tooltips/music1.jpg" alt="music1"/>1</span></a>
@@ -343,11 +345,11 @@ endwhile;
 
             <?php
             $dbhost = 'localhost';
-            $dbuser = 'username';
-            $dbpass = 'password';
-            $connect=@mysql_connect("localhost","username","password");
+            $dbuser = 'u372998677_stud';
+            $dbpass = 'abhisekh96';
+            $connect=@mysql_connect("localhost","u372998677_stud","abhisekh96");
 
-            mysql_select_db("Song_upload");
+            mysql_select_db("u372998677_stud");
 
 
             $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");
