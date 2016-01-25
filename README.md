@@ -4,6 +4,8 @@ Online music streaming website
 
 ## Changelog
 
+        v1.0.3 - Added slideshow Image upload form & fetched poster and title for slideshow.
+
         v1.0.2 - Updated new movie posters for wowslider & added posters to data1/images folder.
 
         v1.0.1 - Updated audio player with playlist.

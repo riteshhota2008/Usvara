@@ -1,10 +1,7 @@
 <!--<?php
-$dbhost = 'localhost';
-$dbuser = 'username';
-$dbpass = 'password';
-$connect=@mysql_connect("localhost","u372998677_stud","abhisekh96");
 
-mysql_select_db("u372998677_stud");
+$connect=@mysql_connect("localhost","username","password");
+mysql_select_db("dbname");
 
 
 $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");
@@ -250,17 +247,156 @@ endwhile;
             </ul>
         </nav>
     </div><!-- language -->
-    <div id="slider">
+
+    <!-- Woo Slider -->
+
+        <div id="slider">
         <!-- Start Slider section -->
         <div id="wowslider-container1">
             <div class="ws_images"><ul>
-                    <li><img src="data1/images/Loveshhuda-Slider.jpg" alt="music1" title="Loveshhuda" id="wows1_0"/></li>
-                    <li><img src="data1/images/Airlift_Slider.jpg" alt="music2" title="Airlift" id="wows1_1"/></li>
-                    <li><img src="data1/images/SaalaKhadoos_Slider.jpg" alt="music3" title="Saala Khadoos" id="wows1_2"/></li>
-                    <li><a href="#"><img src="data1/images/Sanam_Teri_Kasam_Slider.jpg" alt="music4" title="Sanam Teri Kasam" id="wows1_3"/></a></li>
-                    <li><img src="data1/images/SanamRe_Slider.jpg" alt="music5" title="Sanam Re" id="wows1_4"/></li>
-                    <li><img src="data1/images/Brothers_Slider.jpg" alt="music6" title="Brothers" id="wows1_5"/></li>
-                    <li><img src="data1/images/Fitoor_Slider.jpg" alt="music7" title="Fitoor" id="wows1_6"/></li>
+                    <li><img height="360px" width="1000px" alt="music1" title="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=1");
+                        while ($rows = mysql_fetch_array($query)):
+                            $Title = $rows['Title'];
+
+                            echo $Title;
+                        endwhile;
+
+                        ?>" id="wows1_0" src="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=1");
+                        while ($rows = mysql_fetch_array($query)):
+
+                            echo 'data:image;base64,'.$rows[Image];
+                             endwhile;
+
+        ?>"/></li>
+                    <li><img height="360px" width="1000px" alt="music1" title="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=2");
+                        while ($rows = mysql_fetch_array($query)):
+                            $Title = $rows['Title'];
+
+                            echo $Title;
+                        endwhile;
+
+                        ?>" id="wows1_1" src="<?php
+
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=2");
+                        while ($rows = mysql_fetch_array($query)):
+
+                       echo 'data:image;base64,'.$rows[Image];
+                   endwhile;
+
+                   ?>"/></li>
+                    <li><img height="360px" width="1000px" alt="music1" title="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=3");
+                        while ($rows = mysql_fetch_array($query)):
+                            $Title = $rows['Title'];
+
+                            echo $Title;
+                        endwhile;
+
+                        ?>" id="wows1_2" src="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=3");
+                        while ($rows = mysql_fetch_array($query)):
+
+                            echo 'data:image;base64,'.$rows[Image];
+                        endwhile;
+
+                        ?>"/></li>
+                    <li><img height="360px" width="1000px" alt="music1" title="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=4");
+                        while ($rows = mysql_fetch_array($query)):
+                            $Title = $rows['Title'];
+
+                            echo $Title;
+                        endwhile;
+
+                        ?>" id="wows1_3" src="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=4");
+                        while ($rows = mysql_fetch_array($query)):
+
+                            echo 'data:image;base64,'.$rows[Image];
+                        endwhile;
+
+                        ?>"/></li>
+                    <li><img height="360px" width="1000px" alt="music1" title="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=5");
+                        while ($rows = mysql_fetch_array($query)):
+                            $Title = $rows['Title'];
+
+                            echo $Title;
+                        endwhile;
+
+                        ?>" id="wows1_4" src="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=5");
+
+
+                        while ($rows = mysql_fetch_array($query)):
+
+                            echo 'data:image;base64,'.$rows[Image];
+                        endwhile;
+
+                        ?>"/></li>
+                    <li><img height="360px" width="1000px" alt="music1" title="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=6");
+                        while ($rows = mysql_fetch_array($query)):
+                            $Title = $rows['Title'];
+
+                            echo $Title;
+                        endwhile;
+
+                        ?>" id="wows1_5" src="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=6");
+                        while ($rows = mysql_fetch_array($query)):
+
+                            echo 'data:image;base64,'.$rows[Image];
+                        endwhile;
+
+                        ?>"/></li>
+                    <li><img height="360px" width="1000px" alt="music1" title="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=7");
+                        while ($rows = mysql_fetch_array($query)):
+                            $Title = $rows['Title'];
+
+                            echo $Title;
+                        endwhile;
+
+                        ?>" id="wows1_6" src="<?php
+                        $connect=@mysql_connect("localhost","username","password");
+                        mysql_select_db("dbname");
+                        $query = mysql_query("SELECT * FROM Slideshow WHERE id=7");
+                        while ($rows = mysql_fetch_array($query)):
+
+                            echo 'data:image;base64,'.$rows[Image];
+                        endwhile;
+
+                        ?>"/></li>
                 </ul></div>
             <div class="ws_bullets"><div>
                     <a href="#" title="The Professional Music World"><span><img src="data1/tooltips/music1.jpg" alt="music1"/>1</span></a>
@@ -268,6 +404,8 @@ endwhile;
                     <a href="#" title="The Professional Music World"><span><img src="data1/tooltips/music3.jpg" alt="music3"/>3</span></a>
                     <a href="#" title="The Professional Music World"><span><img src="data1/tooltips/music4.jpg" alt="music4"/>4</span></a>
                     <a href="#" title="The Professional Music World"><span><img src="data1/tooltips/music5.jpg" alt="music5"/>5</span></a>
+                    <a href="#" title="The Professional Music World"><span><img src="data1/tooltips/music5.jpg" alt="music5"/>6</span></a>
+                    <a href="#" title="The Professional Music World"><span><img src="data1/tooltips/music5.jpg" alt="music5"/>7</span></a>
                 </div></div><div class="ws_script" style="position:absolute;left:-99%">
                 <div class="ws_shadow"></div>
             </div>
@@ -275,6 +413,9 @@ endwhile;
             <script type="text/javascript" src="engine1/script.js"></script>
             <!-- End Slider section -->
         </div>
+
+    <!-- Woo slider End -->
+
         <div id="search-container">
             <h2>FILTER BY</h2>
             <form action="#">
@@ -344,12 +485,8 @@ endwhile;
 <!-- To fetch the albums -->
 
             <?php
-            $dbhost = 'localhost';
-            $dbuser = 'u372998677_stud';
-            $dbpass = 'abhisekh96';
-            $connect=@mysql_connect("localhost","u372998677_stud","abhisekh96");
-
-            mysql_select_db("u372998677_stud");
+            $connect=@mysql_connect("localhost","username","password");
+            mysql_select_db("dbname");
 
 
             $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");
