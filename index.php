@@ -1,7 +1,10 @@
 <!--<?php
+$dbhost = 'localhost';
+$dbuser = 'username';
+$dbpass = 'password';
+$connect=@mysql_connect("localhost","u372998677_stud","password");
 
-$connect=@mysql_connect("localhost","username","password");
-mysql_select_db("dbname");
+mysql_select_db("u372998677_stud");
 
 
 $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");
@@ -255,8 +258,8 @@ endwhile;
         <div id="wowslider-container1">
             <div class="ws_images"><ul>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=1");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -265,8 +268,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_0" src="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=1");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -275,8 +278,8 @@ endwhile;
 
         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=2");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -286,8 +289,8 @@ endwhile;
 
                         ?>" id="wows1_1" src="<?php
 
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=2");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -296,8 +299,8 @@ endwhile;
 
                    ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=3");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -306,8 +309,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_2" src="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=3");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -316,8 +319,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=4");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -326,8 +329,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_3" src="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=4");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -336,8 +339,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=5");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -346,8 +349,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_4" src="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=5");
 
 
@@ -358,8 +361,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=6");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -368,8 +371,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_5" src="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=6");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -378,8 +381,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=7");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -388,8 +391,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_6" src="<?php
-                        $connect=@mysql_connect("localhost","username","password");
-                        mysql_select_db("dbname");
+                        $connect=@mysql_connect("localhost","u372998677_stud","password");
+                        mysql_select_db("u372998677_stud");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=7");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -416,7 +419,305 @@ endwhile;
 
     <!-- Woo slider End -->
 
-        <div id="search-container">
+
+    <!-- New search testing -->
+
+ <!--   <form action='<?php echo $_SERVER['PHP_SELF']; ?>' method='post' name='form_filter' >
+        <select name="value">
+            <option value="all">Movies</option>
+            <option value="Fitzgerald">Singers</option>
+            <option value="Herring">Music Directors</option>
+        </select>
+        <br />
+        <input type='submit' value = 'Filter'>
+    </form>
+
+
+    <?php
+    //connect to database, checking, etc
+    $db_hostname = 'localhost';
+    $db_username = 'u372998677_stud';
+    $db_password = 'password';
+    $db_database = 'u372998677_stud';
+
+    // Database Connection String
+    $con = @mysql_connect($db_hostname,$db_username,$db_password);
+    if (!$con)
+    {
+        die('Could not connect: ' . mysql_error());
+    }
+
+    mysql_select_db($db_database, $con);
+
+    // process form when posted
+    if(isset($_POST['value'])) {
+        if($_POST['value'] == 'Fitzgerald') {
+            // query to get all Fitzgerald records
+            $query = "SELECT * FROM Song_upload WHERE Movie_Name='Sanam Re'";
+        }
+        elseif($_POST['value'] == 'Herring') {
+            // query to get all Herring records
+            $query = "SELECT * FROM Song_upload WHERE Singer_Name LIKE 's%' ORDER BY Singer_Name ASC";
+        } else {
+            // query to get all records
+            $query = "SELECT * FROM Song_upload WHERE Music_Dir_Name LIKE 's%' ORDER BY Music_Dir_Name ASC";
+        }
+        $sql = mysql_query($query);
+
+        while ($row = mysql_fetch_array($query)){
+            $Movie_Name = $rows['Movie_Name'];
+            $Singer_Name = $rows['Singer_Name'];
+            $Music_Dir_Name = $rows['Music_Dir_Name'];
+            $Hero_Name = $rows['Hero_Name'];
+            $Year_Released = $rows['Year_Released'];
+            $Language = $rows['Language'];
+            $Upload_song = $rows['Upload_song'];
+
+            // Echo your rows here...
+           // echo 'The user ID is:' . $row['id'];
+            echo '
+    <div class="container">
+    <ul class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Movie_Name'] . '</a></li></ul></div> ';
+            echo '
+    <div class="container">
+    <ul class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Singer_Name'] . '</a></li></ul></div> ';
+            echo '
+    <div class="container">
+    <ul class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Music_Dir_Name'] . '</a></li></ul></div> ';
+        }
+        mysql_close($con);
+    }
+    ?>
+
+    <!-- New search testing end -->
+
+    <!-- Filter Search -->
+
+
+    <div class="row" style="margin:20px 0 0 20px">
+        <form class="container">
+            <div class="row">
+                <div>
+                    <input placeholder="" id="term" name="term" type="text" class="validate">
+                    <label for="term"></label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" value="Submit" name="action">Movies
+                    <i class="material-icons right"></i>
+                </button>
+           <!--     <div>
+                    <input placeholder="" id="terms" name="terms" type="text" class="validate">
+                    <label for="term"></label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" value="Submit" name="action">Heroes
+                    <i class="material-icons right"></i>
+                </button>
+                <div>
+                    <input placeholder="" id="termss" name="termss" type="text" class="validate">
+                    <label for="term"></label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" value="Submit" name="action">Singers
+                    <i class="material-icons right"></i>
+                </button>
+                <div>
+                    <input placeholder="" id="termsss" name="termsss" type="text" class="validate">
+                    <label for="term"></label>
+                </div>
+                <button class="btn waves-effect waves-light" type="submit" value="Submit" name="action">Music Dir
+                    <i class="material-icons right"></i>
+                </button> -->
+
+     <!--           <input id="terms" name="terms" type="submit" value="Heroes">
+                <input id="termss" name="termss" type="submit" value="Singer">
+                <input id="termsss" name="termsss" type="submit" value="Music Dir">    -->
+           </div>
+        </form>
+    </div>
+
+    <?php
+    $db_hostname = 'localhost';
+    $db_username = 'u372998677_stud';
+    $db_password = 'password';
+    $db_database = 'u372998677_stud';
+
+    // Database Connection String
+    $con = @mysql_connect($db_hostname,$db_username,$db_password);
+    if (!$con)
+    {
+        die('Could not connect: ' . mysql_error());
+    }
+
+    mysql_select_db($db_database, $con);
+    ?>
+
+    <?php
+    if (!empty($_REQUEST['term'])) {
+
+        $term = mysql_real_escape_string($_REQUEST['term']);
+
+        $sql = "SELECT * FROM Song_upload WHERE Movie_Name LIKE '%" . $term . "%' OR  Hero_Name LIKE '%" . $term . "%' OR  Singer_Name LIKE '%" . $term . "%' OR  Music_Dir_Name LIKE '%" . $term . "%' ";
+        $r_query = mysql_query($sql);
+
+        while ($row = mysql_fetch_array($r_query)) {
+            //echo 'Primary key: ' .$row['PRIMARYKEY'];
+            //echo '<br /> Name:<a href="'.$row['College_Link']."></a> ' .$row['College_Name'];
+            //echo '<br /> Link: '.$row['College_Link'];
+            //echo '<br /> Category: '.$row['Category'];
+            //echo '<br /> Cut Size: '.$row['CutSize'];
+            //echo '<a href="'.$row['College_Link'].' ">'.$row['College_Name'].'</a> ';
+            echo '
+    <div class="container">
+    <div class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Movie_Name'] . '</a> ';
+            echo'<a href="' . $row['Upload_song'] . ' ">' . $row['Hero_Name'] . '</a> ';
+            echo'<a href="' . $row['Upload_song'] . ' ">' . $row['Singer_Name'] . '</a> ';
+            echo'<a href="' . $row['Upload_song'] . ' ">' . $row['Music_Dir_Name'] . '</a></div></div> ';
+        }
+    }
+    else {
+        //echo'Sorry, your college not found in our database.</div></div>';
+    }
+
+    ?>
+<!--
+    <?php
+    $db_hostname = 'localhost';
+    $db_username = 'u372998677_stud';
+    $db_password = 'password';
+    $db_database = 'u372998677_stud';
+
+    // Database Connection String
+    $con = @mysql_connect($db_hostname,$db_username,$db_password);
+    if (!$con)
+    {
+        die('Could not connect: ' . mysql_error());
+    }
+
+    mysql_select_db($db_database, $con);
+    ?>
+
+    <?php
+    if (!empty($_REQUEST['terms'])) {
+
+        $terms = mysql_real_escape_string($_REQUEST['terms']);
+
+        $sql = "SELECT * FROM Song_upload WHERE Hero_Name LIKE '%" . $terms . "%' ORDER BY Hero_Name ASC";
+        $r_query = mysql_query($sql);
+
+        while ($row = mysql_fetch_array($r_query)) {
+            //echo 'Primary key: ' .$row['PRIMARYKEY'];
+            //echo '<br /> Name:<a href="'.$row['College_Link']."></a> ' .$row['College_Name'];
+            //echo '<br /> Link: '.$row['College_Link'];
+            //echo '<br /> Category: '.$row['Category'];
+            //echo '<br /> Cut Size: '.$row['CutSize'];
+            //echo '<a href="'.$row['College_Link'].' ">'.$row['College_Name'].'</a> ';
+            echo '
+    <div class="container">
+    <ul class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Hero_Name'] . '</a></li></ul></div> ';
+        }
+    }
+    else {
+        //echo'Sorry, your college not found in our database.</div></div>';
+    }
+
+    ?>
+
+    <?php
+    $db_hostname = 'localhost';
+    $db_username = 'u372998677_stud';
+    $db_password = 'password';
+    $db_database = 'u372998677_stud';
+
+    // Database Connection String
+    $con = @mysql_connect($db_hostname,$db_username,$db_password);
+    if (!$con)
+    {
+        die('Could not connect: ' . mysql_error());
+    }
+
+    mysql_select_db($db_database, $con);
+    ?>
+
+    <?php
+    if (!empty($_REQUEST['termss'])) {
+
+        $termss = mysql_real_escape_string($_REQUEST['termss']);
+
+        $sql = "SELECT * FROM Song_upload WHERE Singer_Name LIKE '%" . $termss . "%' ORDER BY Singer_Name ASC";
+        $r_query = mysql_query($sql);
+
+        while ($row = mysql_fetch_array($r_query)) {
+            //echo 'Primary key: ' .$row['PRIMARYKEY'];
+            //echo '<br /> Name:<a href="'.$row['College_Link']."></a> ' .$row['College_Name'];
+            //echo '<br /> Link: '.$row['College_Link'];
+            //echo '<br /> Category: '.$row['Category'];
+            //echo '<br /> Cut Size: '.$row['CutSize'];
+            //echo '<a href="'.$row['College_Link'].' ">'.$row['College_Name'].'</a> ';
+            echo '
+    <div class="container">
+    <ul class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Singer_Name'] . '</a></li></ul></div> ';
+        }
+    }
+    else {
+        //echo'Sorry, your college not found in our database.</div></div>';
+    }
+
+    ?>
+
+    <?php
+    $db_hostname = 'localhost';
+    $db_username = 'u372998677_stud';
+    $db_password = 'password';
+    $db_database = 'u372998677_stud';
+
+    // Database Connection String
+    $con = @mysql_connect($db_hostname,$db_username,$db_password);
+    if (!$con)
+    {
+        die('Could not connect: ' . mysql_error());
+    }
+
+    mysql_select_db($db_database, $con);
+    ?>
+
+    <?php
+    if (!empty($_REQUEST['termsss'])) {
+
+        $termsss = mysql_real_escape_string($_REQUEST['termsss']);
+
+        $sql = "SELECT * FROM Song_upload WHERE Music_Dir_Name LIKE '%" . $termsss . "%' ORDER BY Music_Dir_Name ASC";
+        $r_query = mysql_query($sql);
+
+        while ($row = mysql_fetch_array($r_query)) {
+            //echo 'Primary key: ' .$row['PRIMARYKEY'];
+            //echo '<br /> Name:<a href="'.$row['College_Link']."></a> ' .$row['College_Name'];
+            //echo '<br /> Link: '.$row['College_Link'];
+            //echo '<br /> Category: '.$row['Category'];
+            //echo '<br /> Cut Size: '.$row['CutSize'];
+            //echo '<a href="'.$row['College_Link'].' ">'.$row['College_Name'].'</a> ';
+            echo '
+    <div class="container">
+    <ul class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Music_Dir_Name'] . '</a></li></ul></div> ';
+        }
+    }
+    else {
+        //echo'Sorry, your college not found in our database.</div></div>';
+    }
+
+    ?>
+
+
+
+
+-->
+
+
+    <div id="search-container">
             <h2>FILTER BY</h2>
             <form action="#">
                 <ul>
@@ -427,9 +728,9 @@ endwhile;
                     <li id="filter-button4" class="filter-button" onclick="background(this.id)"/>MUSIC DIR</li>
                 </ul>
                 <div id="search" class="search">
-                    <input type="text" class="search-field" id="search-field1"/>
+                    <input type="text" class="search-field" id="term" name="term"/>
                     <input id="apply-button" type="submit" value="APPLY" onload="setZindex()" onclick="direction()"/>
-                </div>
+               </div>
 
                 <div id="heroes-search" class="search">
 
@@ -448,8 +749,60 @@ endwhile;
                 </div>
 
             </form>
+
+
+
         </div><!-- search container -->
 </header>
+
+
+<?php
+$db_hostname = 'localhost';
+$db_username = 'root';
+$db_password = '12345678';
+$db_database = 'Song_upload';
+
+// Database Connection String
+$con = @mysql_connect($db_hostname,$db_username,$db_password);
+if (!$con)
+{
+    die('Could not connect: ' . mysql_error());
+}
+
+mysql_select_db($db_database, $con);
+?>
+
+<?php
+if (!empty($_REQUEST['term'])) {
+
+    $term = mysql_real_escape_string($_REQUEST['term']);
+
+    $sql = "SELECT * FROM Songs WHERE Movie_Name LIKE '%" . $term . "%' OR  Hero_Name LIKE '%" . $term . "%' OR  Singer_Name LIKE '%" . $term . "%' OR  Music_Dir_Name LIKE '%" . $term . "%' ";
+    $r_query = mysql_query($sql);
+
+    while ($row = mysql_fetch_array($r_query)) {
+        //echo 'Primary key: ' .$row['PRIMARYKEY'];
+        //echo '<br /> Name:<a href="'.$row['College_Link']."></a> ' .$row['College_Name'];
+        //echo '<br /> Link: '.$row['College_Link'];
+        //echo '<br /> Category: '.$row['Category'];
+        //echo '<br /> Cut Size: '.$row['CutSize'];
+        //echo '<a href="'.$row['College_Link'].' ">'.$row['College_Name'].'</a> ';
+        echo '
+    <div class="container">
+    <div class="row">
+    <a href="' . $row['Upload_song'] . ' ">' . $row['Movie_Name'] . '</a> ';
+        echo'<a href="' . $row['Upload_song'] . ' ">' . $row['Hero_Name'] . '</a> ';
+        echo'<a href="' . $row['Upload_song'] . ' ">' . $row['Singer_Name'] . '</a> ';
+        echo'<a href="' . $row['Upload_song'] . ' ">' . $row['Music_Dir_Name'] . '</a></div></div> ';
+    }
+}
+else {
+    //echo'Sorry, your college not found in our database.</div></div>';
+}
+
+?>
+
+<!-- Filter search end -->
 
 
 <div id="content">
@@ -485,8 +838,12 @@ endwhile;
 <!-- To fetch the albums -->
 
             <?php
-            $connect=@mysql_connect("localhost","username","password");
-            mysql_select_db("dbname");
+            $dbhost = 'localhost';
+            $dbuser = 'u372998677_stud';
+            $dbpass = 'password';
+            $connect=@mysql_connect("localhost","u372998677_stud","password");
+
+            mysql_select_db("u372998677_stud");
 
 
             $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");

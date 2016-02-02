@@ -118,10 +118,32 @@
 <div class="form-style-5">
     <form method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend><span class="number">1</span> Slideshow Details</legend>
-            <input type="text" name="Title" id="Title" placeholder="Title *">
+            <legend><span class="number">1</span> Song Details</legend>
+            <input type="text" name="Movie_Name" id="Movie_Name" placeholder="Movie Name *">
+            <input type="text" name="Singer_Name" id="Singer_Name" placeholder="Singer Name *">
+            <input type="text" name="Music_Dir_Name" id="Music_Dir_Name" placeholder="Music Director Name *">
+            <input type="text" name="Hero_Name" id="Hero_Name" placeholder="Hero Name *">
+            <input type="text" name="Year_Released" id="Year_Released" placeholder="Year Released *">
+            <!--<textarea name="field3" placeholder="About yourself"></textarea>-->
+            <label for="job">Language:</label>
+            <select id="job" name="Language">
+                <optgroup label="">
+                    <option value="Hindi">Hindi</option>
+                    <option value="English">English</option>
+                    <option value="Telugu">Telugu</option>
+                    <option value="Punjabi">Punjabi</option>
+                    <option value="Marathi">Marathi</option>
+                    <option value="Tamil">Tamil</option>
+                    <option value="Malayalam">Malayalam</option>
+                    <option value="Gujrati">Gujrati</option>
+                    <option value="Bengali">Bengali</option>
+                </optgroup>
+            </select>
+        </fieldset>
         <fieldset>
-            <legend><span class="number">2</span>Image</legend>
+            <legend><span class="number">2</span> Song Link</legend>
+            <textarea name="Upload_song" id="Upload_song" placeholder="Song Link *"></textarea>
+            <legend><span class="number">3</span>Movie Poster</legend>
             <input type="file" name="image" id="image">
         </fieldset>
         <input type="submit" value="Submit" name="sumit">
@@ -140,30 +162,30 @@ if(isset($_POST['sumit']))
     }
     else
     {
-        $Title=$_POST['Title'];
-        //$Movie_Name=$_POST['Movie_Name'];
-        //$Singer_Name=$_POST['Singer_Name'];
-        //$Music_Dir_Name=$_POST['Music_Dir_Name'];
-        //$Hero_Name=$_POST['Hero_Name'];
-        //$Year_Released=$_POST['Year_Released'];
-        //$Language=$_POST['Language'];
-        //$Upload_song=$_POST['Upload_song'];
+
+        $Movie_Name=$_POST['Movie_Name'];
+        $Singer_Name=$_POST['Singer_Name'];
+        $Music_Dir_Name=$_POST['Music_Dir_Name'];
+        $Hero_Name=$_POST['Hero_Name'];
+        $Year_Released=$_POST['Year_Released'];
+        $Language=$_POST['Language'];
+        $Upload_song=$_POST['Upload_song'];
 
 
         $image= addslashes($_FILES['image']['tmp_name']);
         $name= addslashes($_FILES['image']['name']);
         $image= file_get_contents($image);
         $image= base64_encode($image);
-        saveimage($Title,$name,$image);//saveimage($name,$image);
+        saveimage($Movie_Name,$Singer_Name,$Music_Dir_Name,$Hero_Name,$Year_Released,$Language,$Upload_song,$name,$image);//saveimage($name,$image);
     }
 }
 //displayimage();
-function saveimage($Title,$name,$image)
+function saveimage($FirstName,$Singer_Name,$Music_Dir_Name,$Hero_Name,$Year_Released,$Language,$Upload_song,$name,$image)
     //function saveimage($name,$image)
 {
     $con=@mysql_connect("localhost","u372998677_stud","password");
     mysql_select_db("u372998677_stud",$con);
-    $qry="insert into Slideshow (Title,Image_Name,Image) values ('$Title','$name','$image')";
+    $qry="insert into Song_upload (Movie_Name,Singer_Name,Music_Dir_Name,Hero_Name,Year_Released,Language,Upload_song,Image_Name,Image) values ('$FirstName','$Singer_Name','$Music_Dir_Name','$Hero_Name','$Year_Released','$Language','$Upload_song','$name','$image')";
     //$qry="insert into images (name,image) values ('$name','$image')";
     $result=mysql_query($qry,$con);
     if($result)
