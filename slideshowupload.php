@@ -161,8 +161,8 @@ if(isset($_POST['sumit']))
 function saveimage($Title,$name,$image)
     //function saveimage($name,$image)
 {
-    $con=@mysql_connect("localhost","u372998677_stud","password");
-    mysql_select_db("u372998677_stud",$con);
+    $con=@mysql_connect("localhost","root","pass");
+    mysql_select_db("db",$con);
     $qry="insert into Slideshow (Title,Image_Name,Image) values ('$Title','$name','$image')";
     //$qry="insert into images (name,image) values ('$name','$image')";
     $result=mysql_query($qry,$con);
