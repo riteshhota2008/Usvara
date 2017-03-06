@@ -2,9 +2,9 @@
 $dbhost = 'localhost';
 $dbuser = 'username';
 $dbpass = 'password';
-$connect=@mysql_connect("localhost","u372998677_stud","password");
+$connect=@mysql_connect("localhost","root","pass");
 
-mysql_select_db("u372998677_stud");
+mysql_select_db("db");
 
 
 $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");
@@ -258,8 +258,8 @@ endwhile;
         <div id="wowslider-container1">
             <div class="ws_images"><ul>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=1");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -268,8 +268,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_0" src="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=1");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -278,8 +278,8 @@ endwhile;
 
         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=2");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -289,8 +289,8 @@ endwhile;
 
                         ?>" id="wows1_1" src="<?php
 
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=2");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -299,8 +299,8 @@ endwhile;
 
                    ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=3");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -309,8 +309,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_2" src="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=3");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -319,8 +319,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","db");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=4");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -329,8 +329,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_3" src="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=4");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -339,8 +339,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=5");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -349,8 +349,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_4" src="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=5");
 
 
@@ -361,8 +361,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=6");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -371,8 +371,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_5" src="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=6");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -381,8 +381,8 @@ endwhile;
 
                         ?>"/></li>
                     <li><img height="360px" width="1000px" alt="music1" title="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=7");
                         while ($rows = mysql_fetch_array($query)):
                             $Title = $rows['Title'];
@@ -391,8 +391,8 @@ endwhile;
                         endwhile;
 
                         ?>" id="wows1_6" src="<?php
-                        $connect=@mysql_connect("localhost","u372998677_stud","password");
-                        mysql_select_db("u372998677_stud");
+                        $connect=@mysql_connect("localhost","root","pass");
+                        mysql_select_db("db");
                         $query = mysql_query("SELECT * FROM Slideshow WHERE id=7");
                         while ($rows = mysql_fetch_array($query)):
 
@@ -436,9 +436,9 @@ endwhile;
     <?php
     //connect to database, checking, etc
     $db_hostname = 'localhost';
-    $db_username = 'u372998677_stud';
-    $db_password = 'password';
-    $db_database = 'u372998677_stud';
+    $db_username = 'root';
+    $db_password = 'pass';
+    $db_database = 'db';
 
     // Database Connection String
     $con = @mysql_connect($db_hostname,$db_username,$db_password);
@@ -538,9 +538,9 @@ endwhile;
 
     <?php
     $db_hostname = 'localhost';
-    $db_username = 'u372998677_stud';
-    $db_password = 'password';
-    $db_database = 'u372998677_stud';
+    $db_username = 'root';
+    $db_password = 'pass';
+    $db_database = 'db';
 
     // Database Connection String
     $con = @mysql_connect($db_hostname,$db_username,$db_password);
@@ -584,9 +584,9 @@ endwhile;
 <!--
     <?php
     $db_hostname = 'localhost';
-    $db_username = 'u372998677_stud';
-    $db_password = 'password';
-    $db_database = 'u372998677_stud';
+    $db_username = 'root';
+    $db_password = 'pass';
+    $db_database = 'db';
 
     // Database Connection String
     $con = @mysql_connect($db_hostname,$db_username,$db_password);
@@ -627,9 +627,9 @@ endwhile;
 
     <?php
     $db_hostname = 'localhost';
-    $db_username = 'u372998677_stud';
-    $db_password = 'password';
-    $db_database = 'u372998677_stud';
+    $db_username = 'root';
+    $db_password = 'pass';
+    $db_database = 'db';
 
     // Database Connection String
     $con = @mysql_connect($db_hostname,$db_username,$db_password);
@@ -670,9 +670,9 @@ endwhile;
 
     <?php
     $db_hostname = 'localhost';
-    $db_username = 'u372998677_stud';
-    $db_password = 'password';
-    $db_database = 'u372998677_stud';
+    $db_username = 'root';
+    $db_password = 'pass';
+    $db_database = 'db';
 
     // Database Connection String
     $con = @mysql_connect($db_hostname,$db_username,$db_password);
@@ -759,8 +759,8 @@ endwhile;
 <?php
 $db_hostname = 'localhost';
 $db_username = 'root';
-$db_password = '12345678';
-$db_database = 'Song_upload';
+$db_password = 'pass';
+$db_database = 'db';
 
 // Database Connection String
 $con = @mysql_connect($db_hostname,$db_username,$db_password);
@@ -839,11 +839,11 @@ else {
 
             <?php
             $dbhost = 'localhost';
-            $dbuser = 'u372998677_stud';
-            $dbpass = 'password';
-            $connect=@mysql_connect("localhost","u372998677_stud","password");
+            $dbuser = 'root';
+            $dbpass = 'pass';
+            $connect=@mysql_connect("localhost","root","pass");
 
-            mysql_select_db("u372998677_stud");
+            mysql_select_db("db");
 
 
             $query = mysql_query("SELECT * FROM Song_upload ORDER BY id ASC LIMIT 12");
