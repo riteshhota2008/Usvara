@@ -183,8 +183,8 @@ if(isset($_POST['sumit']))
 function saveimage($FirstName,$Singer_Name,$Music_Dir_Name,$Hero_Name,$Year_Released,$Language,$Upload_song,$name,$image)
     //function saveimage($name,$image)
 {
-    $con=@mysql_connect("localhost","u372998677_stud","password");
-    mysql_select_db("u372998677_stud",$con);
+    $con=@mysql_connect("localhost","root","pass");
+    mysql_select_db("db",$con);
     $qry="insert into Song_upload (Movie_Name,Singer_Name,Music_Dir_Name,Hero_Name,Year_Released,Language,Upload_song,Image_Name,Image) values ('$FirstName','$Singer_Name','$Music_Dir_Name','$Hero_Name','$Year_Released','$Language','$Upload_song','$name','$image')";
     //$qry="insert into images (name,image) values ('$name','$image')";
     $result=mysql_query($qry,$con);
